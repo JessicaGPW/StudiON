@@ -133,10 +133,12 @@
   
         <form class="footer__form">
           <label for="email">receba news e promoções</label>
-          <fieldset>
+          <div class="footer__email">
             <input id="email" type="email" placeholder="email" />
-            <button type="submit">enviar</button>
-          </fieldset>
+            <button type="submit">
+              <i class="fas fa-paper-plane fa-2x"></i>
+            </button>
+          </div>
         </form>
   
         <ul class="footer__social">
@@ -149,8 +151,8 @@
           <li>
             <a href="https://twitter.com" target="_blank">
               <span class="fa-stack">
-                <i class="fas fa-circle fa-stack-2x"> </i>
-                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                <i class="fas fa-circle fa-stack-2x fa-inverse"> </i>
+                <i class="fab fa-twitter fa-stack-1x"></i>
               </span>
             </a>
           </li>
@@ -166,7 +168,7 @@
       <hr />
 
       <p>
-        <small>Studi<span>ON</span> - Todos os direitos reservados.</small>
+        <small>Studi<span class="copy--primary">ON</span> - Todos os direitos reservados.</small>
       </p>
     </footer>
   </body>
