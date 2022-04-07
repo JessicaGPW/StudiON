@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto:wght@400;700&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
 
@@ -6,7 +6,9 @@
 @import './CSS/_base.css';
 @import './CSS/_utils.css';
 @import './CSS/_btn.css';
+
 @import './CSS/_navbar.css';
+@import './CSS/_hero.css';
 @import './CSS/_footer.css';
 
 @import './CSS/_home.css';
