@@ -80,3 +80,6 @@
     float: right;
 }
 
+.maps iframe {
+    height: 36.5rem;
+}
