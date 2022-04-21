@@ -1,11 +1,39 @@
 $(document).ready(() => {
+    //MENU
+    $(".navbar__menu-btn").on('click', function () {
+        $(".navbar__links").toggleClass("active");
+        $(this).find("i").toggleClass("fa-bars");
+        $(this).find("i").toggleClass("fa-times");
+
+    });
+
+
+    //CAROUSEL
     const slickOptions = {
         autoplay: true,
         dots: false,
-        prevArrow: '<button type="button" class="slick-prev slider__prev-arrow">Previous</button>',
-        nextArrow: '<button type="button" class="slick-next slider__next-arrow">Previous</button>'
+        //pauseOnHover: false,
+        prevArrow:
+            '<button type="button" class="slick-prev slider__prev-arrow">Previous</button>',
+        nextArrow:
+            '<button type="button" class="slick-next slider__next-arrow">Previous</button>'
     };
+
     $('.slider').slick(slickOptions);
+
+    const counterOptions = {
+        delay: 10,
+        time: 1000,
+    };
+
+    setInterval(() => {
+        const numberCollection = document.querySelectorAll(".counter__number");
+
+        numberCollection.forEach((number) => {
+            const currentNumber = parseInt(number.innerHTML);
+            number.innerHTML = currentNumber + 1;
+        });
+    }, 1000);
 
     $('.footer__form-button').on('click', () => {
         const email = $('#email').val();
